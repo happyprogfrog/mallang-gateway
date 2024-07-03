@@ -11,11 +11,11 @@ zuul:
   routes:
     multiplications:
       path: /multiplications/**
-      serviceId: mallang
+      serviceId: mallang-multiplication
       strip-prefix: false
     results:
       path: /results/**
-      serviceId: mallang
+      serviceId: mallang-multiplication
       strip-prefix: false
     leaders:
       path: /leaders/**
