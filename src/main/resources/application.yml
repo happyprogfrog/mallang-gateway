@@ -25,8 +25,31 @@ zuul:
       path: /stats/**
       serviceId: mallang-gamification
       strip-prefix: false
+    scores:
+      path: /scores/**
+      serviceId: mallang-gamification
+      strip-prefix: false
+    users:
+      path: /users/**
+      serviceId: mallang-multiplication
+      strip-prefix: false
 
 eureka:
   client:
     service-url:
       default-zone: http://localhost:8761/eureka/
+
+---
+# 테스트 목적의 관리자 경로 추가
+spring:
+  profiles: test
+zuul:
+  routes:
+    gamification-admin:
+      path: /gamification/admin/**
+      serviceId: mallang-gamification
+      strip-prefix: false
+    multiplication-admin:
+      path: /multiplication/admin/**
+      serviceId: mallang-multiplication
+      strip-prefix: false
