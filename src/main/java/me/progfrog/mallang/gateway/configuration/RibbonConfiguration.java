@@ -1,4 +1,4 @@
-package me.progfrog.mallang_gateway.configuration;
+package me.progfrog.mallang.gateway.configuration;
 
 import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.AvailabilityFilteringRule;

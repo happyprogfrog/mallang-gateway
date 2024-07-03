@@ -1,4 +1,4 @@
-package me.progfrog.mallang_gateway.configuration;
+package me.progfrog.mallang.gateway.configuration;
 
 import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;
 import org.springframework.context.annotation.Bean;
